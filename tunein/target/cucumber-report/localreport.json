@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is able to Navigate to TuneIn Web Page",
+        "description": "",
+        "id": "tunein-landing-page;user-is-able-to-navigate-to-tunein-web-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209713793,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am a user",
+            "match": {
+              "location": "StepDefinition.initiateDriver()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18921078315,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Navigate to TuneIn url",
+            "match": {
+              "location": "StepDefinition.iNavigateToTuneInUrl()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19718,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see TuneIn Landing Page",
+            "match": {
+              "location": "StepDefinition.verifySomething()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10153939110,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should Exit",
+            "match": {
+              "location": "StepDefinition.iExitBrowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Navigate"
+          }
+        ]
+      }
+    ],
+    "name": "TuneIn Landing Page",
+    "description": "",
+    "id": "tunein-landing-page",
+    "keyword": "Feature",
+    "uri": "one.feature"
+  }
+]
