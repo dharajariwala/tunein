@@ -34,13 +34,12 @@ public class StepDefinition {
     String slide3_data[] = new String[7];
     String slide4_data[] = new String[7];
 
-    @Given("^I am a user$")
-
+    
+    @Given("^I open my browser$")
     public void initiateDriver() {
         System.setProperty("webdriver.chrome.driver",chromeDriverPath);
         results = new Results();
         HttpResponse<com.mashape.unirest.http.JsonNode> response;
-
         String slide=null;
 
         for(int i=0;i<5;i++) {
@@ -128,7 +127,7 @@ public class StepDefinition {
          webDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
        }
 
-    @Then("^I should see TuneIn Landing Page$")
+    @Then("^I should see TuneIn Landing Page with slides Text Href and Images are changed from Last Automation Run$")
     public void verifyTextHrefImageHrefChanged() {
         WebDriverWait wait = new WebDriverWait(webDriver,60);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[data-testid='heroCarouselTextContainer0']>[data-testid='heroTextElement']>[data-testid='line1']")));
