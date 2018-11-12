@@ -44,28 +44,28 @@ formatter.match({
   "location": "StepDefinition.initiateDriver()"
 });
 formatter.result({
-  "duration": 507919958,
+  "duration": 1280501194,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iNavigateToTuneInUrl()"
 });
 formatter.result({
-  "duration": 18433762206,
+  "duration": 17797104812,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.verifySomething()"
 });
 formatter.result({
-  "duration": 94159706656,
+  "duration": 11158297368,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.iExitBrowser()"
 });
 formatter.result({
-  "duration": 1183296828,
+  "duration": 1166880201,
   "status": "passed"
 });
 });

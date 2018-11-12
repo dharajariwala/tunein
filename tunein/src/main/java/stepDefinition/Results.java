@@ -13,7 +13,6 @@ public class Results {
     @JsonProperty("text3")
     String text3;
 
-
     @JsonProperty("text1href")
     String text1href;
 
@@ -23,9 +22,16 @@ public class Results {
     @JsonProperty("text3href")
     String text3href;
 
-
     @JsonProperty("imagehref")
     String imagehref;
+
+    @JsonProperty("timeStamp")
+    long timeStamp;
+
+    public void setTimeStamp(long timeStamp)
+    {
+        this.timeStamp = timeStamp;
+    }
 
     public void setText1(String text)
     {
@@ -61,6 +67,7 @@ public class Results {
     {
         this.imagehref = text;
     }
+
 
 
 }
