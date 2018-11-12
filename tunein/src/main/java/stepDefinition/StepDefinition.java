@@ -129,7 +129,7 @@ public class StepDefinition {
        }
 
     @Then("^I should see TuneIn Landing Page$")
-    public void verifySomething() {
+    public void verifyTextHrefImageHrefChanged() {
         WebDriverWait wait = new WebDriverWait(webDriver,60);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[data-testid='heroCarouselTextContainer0']>[data-testid='heroTextElement']>[data-testid='line1']")));
         WebElement element ;
