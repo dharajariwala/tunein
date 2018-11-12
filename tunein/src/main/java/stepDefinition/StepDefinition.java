@@ -15,9 +15,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.mashape.unirest.http.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
+
 import org.testng.*;
 
 public class StepDefinition {
+
+    private final Logger logger = Logger.getLogger(String.valueOf(StepDefinition.class));
 
     String chromeDriverPath = "/Users/is_2179_dhara/Downloads/chromedriver"; // Download chrome driver and save it in directory. Specify the chrome path here.
     private static final ObjectMapper OM = new ObjectMapper() ;
@@ -134,6 +138,7 @@ public class StepDefinition {
         String line;
         String slide =null;
 
+
         for(int i=0;i<5;i++) {
             for(int j=1;j<=3;j++) {
                 heroCarouselTextContainer = "heroCarouselTextContainer"+i;
@@ -148,23 +153,35 @@ public class StepDefinition {
                     switch(i) {
                         case 0:
                             Assert.assertEquals(slide0_data[0], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide0_data[0]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide0_data[1], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide0_data[1]+ " New href on UI = "+element.getAttribute("href"));
                             break;
                         case 1:
                             Assert.assertEquals(slide1_data[0], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide1_data[0]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide1_data[1], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide1_data[1]+ " New href on UI = "+element.getAttribute("href"));
                             break;
                         case 2:
                             Assert.assertEquals(slide2_data[0], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide2_data[0]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide2_data[1], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide2_data[1]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 3:
                             Assert.assertEquals(slide3_data[0], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide3_data[0]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide3_data[1], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide3_data[1]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 4:
                             Assert.assertEquals(slide4_data[0], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide4_data[0]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide4_data[1], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide4_data[1]+ " New href on UI = "+element.getAttribute("href"));
                             break;
                     }
 
@@ -177,23 +194,38 @@ public class StepDefinition {
                     switch(i) {
                         case 0:
                             Assert.assertEquals(slide0_data[2], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide0_data[2]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide0_data[3], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide0_data[3]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 1:
                             Assert.assertEquals(slide1_data[2], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide1_data[2]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide1_data[3], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide1_data[3]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 2:
                             Assert.assertEquals(slide2_data[2], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide2_data[2]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide2_data[3], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide2_data[3]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 3:
                             Assert.assertEquals(slide3_data[2], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide3_data[2]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide3_data[3], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide3_data[3]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 4:
                             Assert.assertEquals(slide4_data[2], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide4_data[2]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide4_data[3], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide4_data[3]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                     }
 
@@ -206,23 +238,37 @@ public class StepDefinition {
                     switch(i) {
                         case 0:
                             Assert.assertEquals(slide0_data[4], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide0_data[4]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide0_data[5], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide0_data[5]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 1:
                             Assert.assertEquals(slide1_data[4], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide1_data[4]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide1_data[5], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide1_data[5]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 2:
                             Assert.assertEquals(slide2_data[4], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide2_data[4]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide2_data[5], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide2_data[5]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                         case 3:
                             Assert.assertEquals(slide3_data[4], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide3_data[4]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide3_data[5], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide3_data[5]+ " New href on UI = "+element.getAttribute("href"));
                             break;
                         case 4:
                             Assert.assertEquals(slide4_data[4], element.getAttribute("innerHTML"));
+                            logger.info(" Slide Number = " +i+ " Line Number = "+j+ " Oldvalue from Elastic = "+slide4_data[4]+ " New value on UI = "+element.getAttribute("innerHTML"));
                             Assert.assertEquals(slide4_data[5], element.getAttribute("href"));
+                            logger.info(" Slide Number = " +i+ " Line Number ="+j+ " oldHref from Elastic = "+slide4_data[5]+ " New href on UI = "+element.getAttribute("href"));
+
                             break;
                     }
 
@@ -238,19 +284,29 @@ public class StepDefinition {
             switch(i) {
                 case 0:
                     Assert.assertEquals(slide0_data[6], element.getAttribute("href"));
-                     break;
+                    logger.info(" Slide Number = " +i+ "Image oldHref from Elastic = "+slide0_data[6]+ " New href on UI = "+element.getAttribute("href"));
+
+                    break;
                 case 1:
                     Assert.assertEquals(slide1_data[6], element.getAttribute("href"));
-                     break;
+                    logger.info(" Slide Number = " +i+ "Image oldHref from Elastic = "+slide1_data[6]+ " New href on UI = "+element.getAttribute("href"));
+
+                    break;
                 case 2:
                     Assert.assertEquals(slide2_data[6], element.getAttribute("href"));
-                     break;
+                    logger.info(" Slide Number = " +i+ "Image oldHref from Elastic = "+slide2_data[6]+ " New href on UI = "+element.getAttribute("href"));
+
+                    break;
                 case 3:
                     Assert.assertEquals(slide3_data[6], element.getAttribute("href"));
-                     break;
+                    logger.info(" Slide Number = " +i+ "Image oldHref from Elastic = "+slide3_data[6]+ " New href on UI = "+element.getAttribute("href"));
+
+                    break;
                 case 4:
                     Assert.assertEquals(slide4_data[6], element.getAttribute("href"));
-                     break;
+                    logger.info(" Slide Number = " +i+ "Image oldHref from Elastic = "+slide4_data[6]+ " New href on UI = "+element.getAttribute("href"));
+
+                    break;
             }
 
 
@@ -261,7 +317,8 @@ public class StepDefinition {
                         .header("Content-Type", "application/json")
                         .body(OM.writeValueAsString(results)).asJson();
                 Thread.sleep(2000);
-             }
+                    logger.info("Write to Elastic success");
+                }
             catch(Exception e)
             {
                 e.printStackTrace();
