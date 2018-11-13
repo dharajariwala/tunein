@@ -149,6 +149,7 @@ public class StepDefinition {
                     results.setText1(element.getAttribute("innerHTML"));
                     results.setText1HREF( element.getAttribute("href"));
 
+                    // used AssertEquals as we dont have changed data compare - instead assertEquals we could use assertNotEquals 
                     switch(i) {
                         case 0:
                             Assert.assertEquals(slide0_data[0], element.getAttribute("innerHTML"));
